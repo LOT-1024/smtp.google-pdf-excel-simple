@@ -1,4 +1,4 @@
-# Smtp.google PDF Excel
+# Smtp.google PDF Excel Simple
 
 To install dependencies:
 
