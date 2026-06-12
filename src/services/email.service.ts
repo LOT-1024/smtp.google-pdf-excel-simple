@@ -13,6 +13,7 @@ const transporter = nodemailer.createTransport({
 export async function sendEmail(
   email: string,
   pdfPath: string,
+  pdfCvPath: string,
   xlsxPath: string,
 ) {
   await transporter.sendMail({
@@ -64,6 +65,10 @@ export async function sendEmail(
       {
         filename: "report.pdf",
         path: pdfPath,
+      },
+      {
+        filename: "report_cv.pdf",
+        path: pdfCvPath,
       },
       {
         filename: "report.xlsx",
